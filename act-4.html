@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo maquetacion</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+
+        .pagina {
+            width: 80%;
+            height: 95vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        
+        header {
+            border-radius: 10px;
+            background-color: rgb(130, 50, 200);
+            height: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header h1 {
+            color: rgb(11, 199, 11);
+            font-size: 22px;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+    
+        nav {
+            border-radius: 10px;
+            background-color: rgb(80, 160, 160);
+            height: 6%;
+        }
+
+    
+        .contenido {
+            border-radius: 10px;
+            display: flex;
+            flex: 1;
+            background-color: #b0e8e8;
+            overflow: hidden;
+        }
+
+        main {
+            width: 70%;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            overflow-y: auto;
+        }
+
+        article {
+            background-color: rgb(150, 20, 20);
+            border-radius: 10px;
+            padding: 10px 14px;
+            color: white;
+            font-size: 14px;
+            flex: 1;
+        }
+
+        aside {
+            border-radius: 10px;
+            width: 30%;
+            background-color: rgb(210, 180, 130);
+        }
+
+        
+        footer {
+            border-radius: 10px 10px 0 0;
+            background-color: rgb(90, 110, 50);
+            height: 15%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="pagina">
+
+        <header>
+            <h1>titulo 1</h1>
+        </header>
+
+        <nav></nav>
+
+        <div class="contenido">
+            <main>
+                <article>articulo 1</article>
+                <article>articulo 2</article>
+                <article>articulo 3</article>
+                <article>articulo 4</article>
+                <article>articulo 5</article>
+            </main>
+            <aside></aside>
+        </div>
+
+        <footer></footer>
+
+    </div>
+
+</body>
+</html>
